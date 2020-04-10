@@ -140,39 +140,16 @@
 
   <p>State Abbreviation: <input id="n1" placeholder="state"></p>
   <p><a href="https://www.50states.com/abbreviations.htm" target="_blank">I don't know my states...</a></p>
- <p>Data Type: <input id="n2" placeholder="data">
- <button onclick="getData();chartIt();" id="btn1">Submit</button></p>
-
-
-  <div class="dropdown">
-
-    <ul class="dataList">
-      Data Types
-
-      <li>positiveIncrease</li>
-      <li>negativeIncrease</li>
-      <li>totalTestResults</li>
-      <li>hospitalized</li>
-      <li>positive</li>
-      <li>negative</li>
-      <li>death</li>
-    </ul>
-  </div>
-
-
     <label for="cars">Data Type:</label>
-    <select id="dataType" name="cars">
-      <option value="volvo">positiveIncrease</option>
-      <option value="saab">negativeIncrease</option>
-      <option value="fiat">totalTestResults</option>
-      <option value="audi">hospitalized</option>
-      <option value="audi">positive</option>
-      <option value="audi">negative</option>
-      <option value="audi">death</option>
-
+    <select id="n2" name="dataType">
+      <option value="positiveIncrease">positiveIncrease</option>
+      <option value="negativeIncrease">negativeIncrease</option>
+      <option value="totalTestResults">totalTestResults</option>
+      <option value="positive">positive</option>
+      <option value="negative">negative</option>
+      <option value="death">death</option>
     </select>
-    <input type="submit">
+   <button onclick="getData();chartIt();" id="btn1">Submit</button></p>
 
 </body>
-
 </html>
