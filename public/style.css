@@ -2,6 +2,25 @@ html {
   text-align: center;
   background-color: cornsilk;
 }
+body {
+  background-color: cornsilk;
+}
+h1 {
+  color: #922B05;
+  font-weight: 500;
+}
+h2 {
+  padding: 20px;
+  /* font-style: italic; */
+  width: 55%;
+  color: rgb(252, 140, 112);
+  font-size: 20px;
+}
+h3 {
+  font-size: 25px;
+  color: #922B05;
+  font-weight: 300;
+}
 .dropdown {
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
@@ -21,11 +40,12 @@ html {
   width: 75px;
   height: 50px;
   background-color: cornsilk;
+  font-size: 50px;
 }
-#n h1{
+/* #n h1{
   text-align: center;
   background-color: cornsilk;
-}
+} */
 .dropdownMenu ul li {
   list-style: none;
   background-color: cornsilk;

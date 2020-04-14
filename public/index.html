@@ -9,32 +9,16 @@
   <link rel="stylesheet" href="style.css">
   <!-- <script src="papaparse.min.js"></script> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-  <center><h1>Covid-19 Daily Tracking</h1></center>
-
+  <!-- <center><h1>Covid-19 Daily Tracking</h1></center> -->
   <h4 id="n"></h4>
-
-
-
-
-
-
-
-
-
   <canvas id="chart" width="200" height="70"></canvas>
   <script>
-
-
     chartIt();
-
-    //let name = document.getElementById("n1").value;
 
     let _colorIndex = 0;
     function getNextColor() {
@@ -55,9 +39,6 @@
     }
 
     async function chartIt() {
-      //  var usstate = document.getElementById("n1");
-      //   console.log(usstate);
-      //   document.getElementById("n").innerHTML = usstate;
 
       const data = await getData();
       const ctx = document.getElementById("chart").getContext("2d");
@@ -142,20 +123,23 @@
     }
 
   </script>
-
+  <center><h1>Covid-19 Daily Tracking</h1></center>
+  <center><h2>Provide the information you would like to see. The data will be compared to North Carolina and Florida. State abbreviations are case sensitive.</h2>
+  <h3>Choose a state based on it's abbreviation</h3>
   <p>State Abbreviation: <input id="n1" placeholder="state"></p>
-  <p><a href="https://www.50states.com/abbreviations.htm" target="_blank">I don't know my states...</a></p>
-    <label for="cars">Data Type:</label>
+  <p><a href="https://www.50states.com/abbreviations.htm" target="_blank">What state do I want?</a></p>
+  <h3>Choose the type of trend you want to see</h3>
+  <label for="dataType">Data Type:</label>
     <select id="n2" name="dataType">
-      <option value="positiveIncrease">positiveIncrease</option>
-      <option value="negativeIncrease">negativeIncrease</option>
-      <option value="totalTestResults">totalTestResults</option>
-      <option value="positive">positive</option>
-      <option value="negative">negative</option>
-      <option value="death">death</option>
+      <option value="positive">Number of positive results</option>
+      <option value="negative">Number of negative results</option>
+      <option value="positiveIncrease">Increase of positive results</option>
+      <option value="negativeIncrease">Increase of negative results</option>
+      <option value="totalTestResults">Total number of test results</option>
+      <option value="death">Number of deaths</option>
     </select>
    <button onclick="getData();chartIt();" id="btn1">Submit</button></p>
-
+  </center>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

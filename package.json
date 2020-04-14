@@ -1,0 +1,25 @@
+{
+  "name": "trialcharts",
+  "version": "1.0.0",
+  "description": "CanvasJs\r good for dealing with static data\r https://canvasjs.com/javascript-charts/\r It has examples of codes that you can change",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilianKorir/trialcharts.git"
+  },
+  "keywords": [],
+  "author": "Chloe deBeus, Kendahl Ross, Lilian Korir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LilianKorir/trialcharts/issues"
+  },
+  "homepage": "https://github.com/LilianKorir/trialcharts#readme"
+}
