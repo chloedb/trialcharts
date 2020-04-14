@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/state', function(req, res) {
-  res.send('HELLO WORLD')
+  // res.send('HELLO WORLD')
   res.render('index') //anything within the public folder
 })
 
